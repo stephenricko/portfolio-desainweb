@@ -4,8 +4,8 @@
 /* ----- VARIABLES ----- */
 :root {
   /* Background and Primary Colors */
-  --body-color: #f5f7f9; /* Hitam abu-abu pekat untuk latar belakang, memberikan kesan elegan dan profesional */
-  --color-white: #f5f7f9; /* Putih keabu-abuan yang lembut untuk mengurangi kontras yang terlalu tajam */
+  --body-color: #ffffff; /* Hitam abu-abu pekat untuk latar belakang, memberikan kesan elegan dan profesional */
+  --color-white: #ffffff; /* Putih keabu-abuan yang lembut untuk mengurangi kontras yang terlalu tajam */
 
   /* Text Colors */
   --text-color-second: #252525; /* Abu-abu terang untuk teks sekunder, jelas namun tetap elegan */
@@ -13,7 +13,7 @@
 
   /* Primary Button & Link Colors */
   --first-color: #252525; /* Ungu tua tegas, memberikan kesan yang profesional namun modern */
-  --first-color-hover: #e7e7e7; /* Ungu lebih tua untuk efek hover, memperkuat kesan tegas pada interaksi */
+  --first-color-hover: #ffffff; /* Ungu lebih tua untuk efek hover, memperkuat kesan tegas pada interaksi */
 
   /* Accent Colors */
   --second-color: #252525; /* Biru kehijauan tegas untuk elemen sekunder, menghadirkan kesan segar namun tetap formal */
@@ -53,14 +53,14 @@ html {
   border-radius: 25px;
 }
 ::-webkit-scrollbar-track {
-  background: #f5f7f9;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #f5f7f9;
+  background: #ffffff;
   border-radius: 30px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #f5f7f9;
+  background: #ffffff;
 }
 
 /* ---##-- REUSABLE CSS --##--- */
@@ -576,7 +576,6 @@ th {
   background-color: #e4dada;
 }
 
-/*------------TUTORIAL API HTML5-----------*/
 
 
 /*------------KANVAS- ----------*/

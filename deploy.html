@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Deploy Web ke Github</title>
+</head>
+<body>
+     <!-- --------------- HEADER --------------- -->
+     <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">StephenRicko</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="index.html" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list">
+              <a href="index.html#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list">
+              <a href="index.html#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list dropdown">
+              <a href="#tutorial" class="nav-link">Tutorial</a>
+              <div class="dropdown-content">
+                <a href="form.html">Tutorial From</a>
+                <a href="table.html">Tutorial Table</a>
+                <a href="html5.html">Tutorial API HTML5</a>
+                <a href="kanvas.html">Tutorial Canvas</a>
+                <a href="deploy.html">Tutorial Deploy Web </a>
+              </div>
+            </li>
+
+            <li class="nav_list">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn">
+            Download CV <i class="uil uil-file-alt"></i>
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+      <!-----DEPLOY----->
+    <div class="dep">
+        <div class="deploy">
+          <div class="dep-loy-info">
+            <h1>Tutorial Deploy Web ke Github</h1>
+            <p>
+                <b>1.</b> Siapkan Proyek Web Anda
+                Pastikan semua file situs web (HTML, CSS, JavaScript, dll.) sudah siap dalam folder proyek Anda. 
+            </p>
+            <p>
+                <b>2.</b> Buat Repositori Git di GitHub
+                Buka GitHub dan login.
+                Klik tombol New atau Create a New Repository.
+                Masukkan nama repositori (contoh: portfolio-desainweb).
+                Pilih Public.
+                Klik Create repository.
+            </p>
+            <p>
+                <b>3.</b> Inisialisasi Git di Proyek Anda (Lokal)
+                Jika proyek Anda belum di-git, lakukan langkah-langkah berikut:
+                
+                Buka terminal atau command prompt.
+                Arahkan ke folder proyek Anda.
+                Jalankan perintah berikut untuk inisialisasi git: 
+                <pre>git init</pre>
+                <pre>git add *</pre>
+                <pre>git commit -m "first commit"</pre>
+                <pre>git branch -M main</pre>
+                <pre>git remote add origin [link github anda]</pre>
+                <pre>git push -u origin main</pre>
+            </p>
+            <p>
+                <b>4.</b> Aktifkan GitHub Pages
+                Buka halaman repositori Anda di GitHub.
+                Klik Settings > Pages.
+                Di bagian Source, pilih Branch: main dan Folder: /root (atau master jika cabang utama Anda adalah master).
+                Klik Save.
+            </p>
+            <p> 
+                <b>5.</b> Akses Situs Web Anda
+                Setelah beberapa menit, situs Anda akan dapat diakses di https://username.github.io/porfolio-desainweb/.
+
+                Jika Anda ingin situs dapat diakses langsung dari https://username.github.io/, simpan file HTML di repositori dengan nama username.github.io.
+
+                Sekarang, situs web Anda sudah di-deploy di GitHub Pages!
+            </p>
+        </div>
+    </p>
+</body>
+</html>
