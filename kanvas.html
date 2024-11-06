@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>HTML5 Implementation</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">StephenRicko</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="index.html#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list">
+              <a href="index.html#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list">
+              <a href="index.html#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+
+            <li class="nav_list dropdown">
+              <a href="#tutorial" class="nav-link">Tutorial</a>
+              <div class="dropdown-content">
+                <a href="form.html">Tutorial From</a>
+                <a href="table.html">Tutorial Table</a>
+                <a href="html5.html">Tutorial API HTML5</a>
+                <a href="kanvas.html">Tutorial Canvas</a>
+                <a href="deploy.html">Tutorial Deploy Web</a>
+              </div>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn">
+            Download CV <i class="uil uil-file-alt"></i>
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+    <title>Menggambar Gambar di Canvas</title>
+    <style>
+      /* Menambahkan border pada elemen canvas agar terlihat */
+      canvas {
+        border: 2px solid #d3d3d3;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Pilih gambar:</p>
+    <!-- Elemen gambar yang sumbernya akan ditentukan -->
+    <img
+      id="gambar"
+      src="assets/images/MESSI2.jpg"
+      alt="Gambar"
+      width="220"
+      height="277"
+    />
+
+    <!-- Elemen canvas tempat gambar akan digambar -->
+    <canvas id="kanvas" width="220" height="277"></canvas>
+
+    <!-- Tombol untuk menjalankan fungsi menggambar -->
+    <p><button onclick="kanvas()">Try it!</button></p>
+
+    <script>
+      /* Fungsi untuk menggambar gambar ke dalam canvas */
+      function kanvas() {
+        // Mendapatkan elemen canvas
+        var c = document.getElementById("kanvas");
+
+        // Mendapatkan konteks 2D dari canvas, diperlukan untuk menggambar
+        var ctx = c.getContext("2d");
+
+        // Mendapatkan elemen gambar berdasarkan ID-nya
+        var img = document.getElementById("gambar");
+
+        // Menggambar gambar ke dalam canvas pada koordinat (10, 10)
+        ctx.drawImage(img, 0, 0, c.width, c.height);
+      }
+    </script>
+  </body>
+</html>

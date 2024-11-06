@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- --------- CSS ---------- -->
+<link rel="stylesheet" href="assets/css/style.css" />
+    <title>Tutorial | Login Form</title>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+          <div class="nav-logo">
+            <p class="nav-name">StephenRicko</p>
+            <span>.</span>
+          </div>
+          <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+              <li class="nav_list">
+                <a href="index.html" class="nav-link active-link">Home</a>
+                <div class="circle"></div>
+              </li>
+  
+              <li class="nav_list">
+                <a href="index.html#about" class="nav-link">About</a>
+                <div class="circle"></div>
+              </li>
+  
+              <li class="nav_list">
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <div class="circle"></div>
+              </li>
+  
+              <li class="nav_list dropdown">
+                <a href="#tutorial" class="nav-link">Tutorial</a>
+                <div class="dropdown-content">
+                  <a href="form.html">Tutorial From</a>
+                  <a href="table.html">Tutorial Table</a>
+                  <a href="html5.html">Tutorial API HTML5</a>
+                  <a href="kanvas.html">Tutorial Canvas</a>
+                  <a href="deploy.html">Tutorial Deploy Web</a>
+                </div>
+            </li>
+              <li class="nav_list">
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <div class="circle"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-button">
+            <button class="btn">
+              Download CV <i class="uil uil-file-alt"></i>
+            </button>
+          </div>
+          <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+          </div>
+        </nav>
+
+
+    <!-- Container utama untuk form login -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- Form login, method POST digunakan untuk mengirim data secara aman -->
+        <form action="/login" method="POST">
+            <!-- Input username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <!-- Input password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <!-- Tombol submit dan reset -->
+            <div style="display: flex; justify-content: space-between;">
+                <input type="submit" value="Login"> <!-- Tombol submit untuk login -->
+                <input type="reset" value="Reset"> <!-- Tombol reset untuk mengosongkan input -->
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
